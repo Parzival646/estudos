@@ -1,5 +1,25 @@
 {
+  "name": "firebase-web-app",
+  "version": "1.0.0",
+  "description": "Firebase web application",
+  "main": "public/index.html",
+  "scripts": {
+    "dev": "firebase serve --only hosting --port 5000",
+    "build": "echo 'No build step required for static files'",
+    "start": "firebase serve --only hosting",
+    "deploy": "firebase deploy --only hosting",
+    "lint": "echo 'Linting not configured'",
+    "serve": "firebase serve"
+  },
   "dependencies": {
     "firebase": "^11.1.0"
-  }
+  },
+  "devDependencies": {
+    "firebase-tools": "^13.0.0"
+  },
+  "keywords": [
+    "firebase",
+    "web",
+    "hosting"
+  ]
 }
